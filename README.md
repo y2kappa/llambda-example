@@ -10,6 +10,8 @@ $ ./target/debug/server
 ```
 
 ## Build on Mac for linux
+You don't need to do it, netlify will do it for you, but you can test, if you want to.
+
 ```
 $ rustup target add x86_64-unknown-linux-musl
 $ brew install FiloSottile/musl-cross/musl-cross
