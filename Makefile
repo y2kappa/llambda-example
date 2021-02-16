@@ -6,7 +6,7 @@ help: ## Show this help.
 build: ## Build static binary and put it in the functions directory.
 	@cargo build --release --target x86_64-unknown-linux-musl
 	@mkdir -p functions
-	@cp target/x86_64-unknown-linux-musl/release/mockapi functions
+	@cp target/x86_64-unknown-linux-musl/release/netlify-example functions
 
 deploy: build ## Deploy the site using Netlify's CLI
 	@netlify deploy --prod
